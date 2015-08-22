@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Polish Cases</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Css/bundle.css" rel="stylesheet" type="text/css" media="all"/>
+</head>
+<body>
+    <div class="row">
+        <div class="button-group medium inline-block">
+            <button class="multi selected state" data-value="Singular">Singular</button>
+            <button class="multi selected state" data-value="Plural">Plural</button>
+        </div>
+        <div class="button-group medium inline-block">
+            <button class="single adjectives selected" data-value="adj">With adjectives</button>
+            <button class="single adjectives" data-value="noadj">No adjectives</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="button-group xlong">
+            <button class="multi nouns selected" data-value="masc_a">Masculine Animate</button>
+            <button class="multi nouns selected" data-value="masc_i">Masculine Inanimate</button>
+            <button class="multi nouns selected" data-value="fem">Feminine</button>
+            <button class="multi nouns selected" data-value="nt">Neuter</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="button-group long">
+            <button class="multi cases selected" data-value="nom">Nominative</button>
+            <button class="multi cases selected" data-value="gen">Genitive</button>
+            <button class="multi cases selected" data-value="dat">Dative</button>
+            <button class="multi cases selected" data-value="acc">Accusative</button>
+            <button class="multi cases selected" data-value="instr">Instrumental</button>
+            <button class="multi cases selected" data-value="loc">Locative</button>
+            <button class="multi cases selected" data-value="voc">Vocative</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="button-group xshort">
+            <button class="single amount" data-value="5">5</button>
+            <button class="single amount" data-value="10">10</button>
+            <button class="single amount" data-value="15">15</button>
+            <button class="single amount selected" data-value="20">20</button>
+        </div>
+    </div>
+    <div class="row top-spacing">
+        <button class="action create">Create table</button>
+        <button class="action quiz">Quiz</button>
+    </div>
+    <hr />
+    <button class="action toggle">Toggle answers</button>
+    <div id="table"></div>
+    <div id="quiz"></div>
+    <button class="show-answer">ANSWER</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="Scripts/data.js" type="text/javascript"></script>
+    <script src="Scripts/global.js" type="text/javascript"></script>
+</body>
+</html>

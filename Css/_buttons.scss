@@ -1,0 +1,115 @@
+﻿$foreColor: #000;
+$backgroundColour: #fff;
+$borderColour: #ccc;
+$borderRadius: 8px;
+
+$actionForeColor: #fff;
+$actionBackgroundColor: #337ab7;
+$actionBorderColor: #2e6da4;
+
+button {
+    font-size: 16px;
+    padding: 0.5em 1em;
+    border: 1px solid $borderColour;
+    font-weight: 300;
+    color: $foreColor;
+    background-color: $backgroundColour;
+    text-shadow: none;
+    border-radius: $borderRadius;
+    border: 1px solid $borderColour;
+    outline: 0;
+    text-align: center;
+
+    &.action {
+        color: $actionForeColor;
+        background-color: $actionBackgroundColor;
+        border-color: $actionBorderColor;
+
+        &.selected {
+            background-color: darken( $actionBackgroundColor, 15% );
+        }
+
+        &:hover {
+            background-color: darken( $actionBackgroundColor, 5% );
+        }
+    }
+
+    &.selected {
+        background-color: darken( $backgroundColour, 15% );
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.125);
+        font-weight: 700;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: darken( $backgroundColour, 5% );
+    }
+
+    &.toggle {
+        display: none;
+        margin: 2em 0 2em 0;
+    }
+}
+
+.button-group {
+    font-size: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+    &.xlong {
+        button {
+            min-width: 190px;
+        }
+    }
+
+    &.long {
+        button {
+            min-width: 150px;
+        }
+    }
+
+    &.medium {
+        button {
+            min-width: 120px;
+        }
+    }
+
+    &.short {
+        button {
+            min-width: 80px;
+        }
+    }
+
+    &.xshort {
+        button {
+            min-width: 60px;
+        }
+    }
+
+    button:first-child {
+        border-top-left-radius: $borderRadius;
+        border-bottom-left-radius: $borderRadius;
+    }
+
+    button:last-child {
+        border-top-right-radius: $borderRadius;
+        border-bottom-right-radius: $borderRadius;
+        border-right: 1px solid $borderColour;
+    }
+
+    button {
+        margin-left: 0;
+        margin-right: 0;
+        border-right: 0;
+        border-radius: 0;
+    }
+}
+
+
+button.show-answer {
+    display: none;
+    font-weight: 700;
+    width: 100%;
+}
