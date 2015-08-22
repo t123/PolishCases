@@ -82,6 +82,7 @@ $borderColor: #ccc;
     text-align: center;
     padding: 50px 0 0 0;
     font-size: 1.5em;
+    height: 300px;
 
     span.word {
         font-weight: 700;
@@ -91,14 +92,22 @@ $borderColor: #ccc;
         font-weight: 700;
     }
 
-    div.answer {
+    .answer {
         font-weight: 700;
         padding: 20px 0 60px 0;
         font-size: 1.5em;
         color: #fff;
 
+        u {
+            border-bottom: none;
+        }
+
         &:hover {
-            color:#000 ;
+            color: #000;
+
+            u {
+                border-bottom: 2px solid #000;
+            }
         }
     }
 }

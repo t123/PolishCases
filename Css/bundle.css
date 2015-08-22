@@ -68,11 +68,11 @@ button {
     margin-right: 0;
     border-right: 0;
     border-radius: 0; }
-
-button.show-answer {
-  display: none;
-  font-weight: 700;
-  width: 100%; }
+  .button-group.quiz {
+    display: none; }
+    .button-group.quiz button {
+      width: 50%;
+      font-weight: 700; }
 
 .row {
   display: block;
@@ -125,15 +125,20 @@ u {
 #quiz {
   text-align: center;
   padding: 50px 0 0 0;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  height: 300px; }
   #quiz span.word {
     font-weight: 700; }
   #quiz span.question {
     font-weight: 700; }
-  #quiz div.answer {
+  #quiz .answer {
     font-weight: 700;
     padding: 20px 0 60px 0;
     font-size: 1.5em;
     color: #fff; }
-    #quiz div.answer:hover {
+    #quiz .answer u {
+      border-bottom: none; }
+    #quiz .answer:hover {
       color: #000; }
+      #quiz .answer:hover u {
+        border-bottom: 2px solid #000; }

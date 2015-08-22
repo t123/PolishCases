@@ -105,11 +105,13 @@ button {
         border-right: 0;
         border-radius: 0;
     }
-}
 
+    &.quiz {
+        display: none;
 
-button.show-answer {
-    display: none;
-    font-weight: 700;
-    width: 100%;
+        button {
+            width: 50%;
+            font-weight: 700;
+        }
+    }
 }

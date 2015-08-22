@@ -41,7 +41,7 @@ $('button.action.create').click(function () {
     $('.toggle').show();
     $('#table').show();
     $('#quiz').hide();
-    $('button.show-answer').hide();
+    $('.button-group quiz').hide();
 
     $('#table').html(g.createTable(
         getOptions('button.state.selected'),
@@ -56,7 +56,11 @@ $('button.action.quiz').click(function () {
     doQuiz();
 });
 
-$('button.show-answer').on('mouseover touch click', function() {
+$('.button-group.quiz .new-question').on('click', function () {
+    doQuiz();
+});
+
+$('.button-group.quiz .show-answer').on('click', function () {
     showQuizAnswer();
 });
 
@@ -87,7 +91,7 @@ function doQuiz() {
     $('.toggle').hide();
     $('#table').hide();
     $('#quiz').show();
-    $('button.show-answer').show();
+    $('.button-group.quiz').show();
 
     $('#quiz').html(g.quiz(
         getOptions('button.state.selected'),
