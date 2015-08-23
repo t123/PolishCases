@@ -71,6 +71,7 @@ button {
   .button-group.quiz {
     display: none; }
     .button-group.quiz button {
+      height: 50px;
       width: 50%;
       font-weight: 700; }
 
