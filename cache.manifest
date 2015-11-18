@@ -1,12 +1,12 @@
 ﻿CACHE MANIFEST
-# v4 - 2015-11-18
+# v5 - 2015-11-18
 
 CACHE:
-http://polish-cases.azurewebsites.net/index.html
-http://polish-cases.azurewebsites.net/Css/bundle.min.css
-http://polish-cases.azurewebsites.net/Scripts/data.js
-http://polish-cases.azurewebsites.net/Scripts/global.js
-http://polish-cases.azurewebsites.net/Scripts/jquery-2.1.4.min.js
+index.html
+Css/bundle.min.css
+Scripts/data.js
+Scripts/global.js
+Scripts/jquery-2.1.4.min.js
 
 NETWORK:
 *
