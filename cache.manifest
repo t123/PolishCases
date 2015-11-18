@@ -1,12 +1,12 @@
 ﻿CACHE MANIFEST
-# v2 - 2015-09-07
+# v4 - 2015-11-18
 
 CACHE:
-http://traviswatt.com/polish/index.html
-http://traviswatt.com/polish/Css/bundle.min.css
-http://traviswatt.com/polish/Scripts/data.js
-http://traviswatt.com/polish/Scripts/global.js
-http://traviswatt.com/polish/Scripts/jquery-2.1.4.min.js
+http://polish-cases.azurewebsites.net/index.html
+http://polish-cases.azurewebsites.net/Css/bundle.min.css
+http://polish-cases.azurewebsites.net/Scripts/data.js
+http://polish-cases.azurewebsites.net/Scripts/global.js
+http://polish-cases.azurewebsites.net/Scripts/jquery-2.1.4.min.js
 
 NETWORK:
 *
